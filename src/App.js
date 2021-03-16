@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Form from './components/Form';
-import Results from './components/Results'
+// import Results from './components/Results'
+// import UserForm from './components/UserForm'
+// import ValidationForm from './components/ValidationForm'
 
 function App() {
   const [ state, setState ] = useState({
@@ -15,8 +16,10 @@ function App() {
 
   return (
     <div className="App">
-      <Form inputs= {state} setInputs={setState}/>
-      <Results data={state}/>
+
+      <Form inputs = {state} setInputs = {setState} />
+      {/* <UserForm inputs= {state} setInputs={setState}/> */}
+      {/* <Results data={state}/> */}
     </div>
   );
 }
